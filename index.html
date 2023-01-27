@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style-jogo.css">
+		<title>Estourando balões</title>
+		
+		<script language='Javascript'>
+
+			function inicia_jogo(){
+
+				var nivel_jogo = document.getElementById('nivel_jogo').value;
+
+				// Altera a pagina do navegador
+				window.location.href = 'jogo.html?' + nivel_jogo;
+			}
+			
+		</script>
+	</head>
+
+	<body>
+		<div class="conteudo">
+			<h1>Jogo Estoura Balões</h1>
+			<p>
+				<strong>Nível:</strong>
+				<select id="nivel_jogo">
+					<option value="1">Fácil</option>
+					<option value="2">Normal</option>
+					<option value="3">Difícil</option>
+				</select>
+			</p>
+			<div>
+				<img src="imagens/iniciar.png" alt="iniciar" class="iniciar" onclick="inicia_jogo()">
+			</div>
+		</div>
+	</body>
+	
+</html>
